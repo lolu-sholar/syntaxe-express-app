@@ -70,8 +70,7 @@ const schema = `{
 fetch('https://syntaxe-express.vercel.app/api/app-users', {
     method: 'GET',
     headers: {
-        'Syntaxe-Resolve-Schema':
-        btoa(schema)
+        'Syntaxe-Resolve-Schema': Buffer.from(schema).toString("base64")
     }
 })
 .then(response => response.json())
@@ -115,8 +114,7 @@ const schema = `{
 fetch('https://syntaxe-express.vercel.app/api/github-users', {
     method: 'GET',
     headers: {
-        'Syntaxe-Resolve-Schema':
-        btoa(schema)
+        'Syntaxe-Resolve-Schema': Buffer.from(schema).toString("base64")
     }
 })
 .then(response => response.json())
@@ -164,8 +162,7 @@ const schema = `{
 fetch('https://syntaxe-express.vercel.app/api/countries', {
     method: 'GET',
     headers: {
-        'Syntaxe-Resolve-Schema':
-        btoa(schema)
+        'Syntaxe-Resolve-Schema': Buffer.from(schema).toString("base64")
     }
 })
 .then(response => response.json())
@@ -290,8 +287,7 @@ const schema = `{
 fetch('https://syntaxe-express.vercel.app/api/countries-states', {
     method: 'GET',
     headers: {
-        'Syntaxe-Resolve-Schema':
-        btoa(schema)
+        'Syntaxe-Resolve-Schema': Buffer.from(schema).toString("base64")
     }
 })
 .then(response => response.json())
@@ -370,8 +366,7 @@ const schema = `{
 fetch('https://syntaxe-express.vercel.app/api/app-users', {
     method: 'GET',
     headers: {
-        'Syntaxe-Resolve-Schema':
-        btoa(schema)
+        'Syntaxe-Resolve-Schema': Buffer.from(schema).toString("base64") 
     }
 })
 .then(response => response.json())
